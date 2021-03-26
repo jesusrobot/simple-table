@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: #ccc;
+  --blue: #F1FFFE;
+  --black: #666
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  
+}
+
+main {
+  width: 80%;
+  margin: 3rem auto 0;
+}
+
+/* TABLE */
+
+.table {
+  width: 100%;
+  padding: 2rem;  
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+}
+
+.table__header, .table__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+  border-bottom: 1px solid var(--gray);
+}
+
+.table__header td, .table__row td{
+  width: 25%;
+  padding: 1rem;
+}
+
+.table__header {
+  border-bottom: none;
+}
+
+.table__name {
+  font-size: 2rem;
+}
+
+.table__finder .finder {
+  width: 100%;
+  padding: .7rem 1rem;
+  border: 1px solid var(--gray);
+  border-radius: 15px;
+}
+
+.table__finder .finder:focus {
+  outline: 0;
+  border: 1px solid var(--black)
+}
+
+.table__header td {
+  font-weight: 800;
+  padding-top: 0;
+}
+
+.table__row:nth-child(odd) {
+  background-color: var(--blue);
+}
+
+#controlls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: aqua;
+}
+
+#controlls .label {
+  display: inline;
+  margin-right: .5rem;
+  color: rgb(151, 151, 151);
+}
+
+#controlls  span#info{
+  padding: 0 1rem;
+  color: rgb(151, 151, 151);
+}
+
+#controlls button {
+  padding: .6rem;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  font-size: 1rem;
+  background: none;
+  cursor: pointer;
+}
+
+#controlls select {
+  padding: .2rem;
+  border: 1px solid var(--gray);
+  color: var(--black);
+  font-size: 1rem;
+  background: none;
+  cursor: pointer;
+}
+
+#controlls select:focus {
+  outline: 0;
+}
+
+#controlls button:focus {
+  outline: 0;
+}
+
+#controlls option:checked {
+  box-shadow: 0 0 10px 100px red inset;
+}
+
